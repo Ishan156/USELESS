@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #070b07;
+    color: #e2e8f0;
+    font-family: ui-sans-serif, system-ui, sans-serif;
+  }
+}
+
+/* Atmospheric subtle cemetery fog */
+.fog-layer {
+  background: radial-gradient(ellipse at 50% 50%, rgba(30, 50, 30, 0.25) 0%, rgba(7, 11, 7, 0.95) 80%);
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0d140d;
+}
+::-webkit-scrollbar-thumb {
+  background: #233523;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #344e2f;
+}
